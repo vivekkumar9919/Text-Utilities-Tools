@@ -98,7 +98,7 @@ export default function HomePage(props) {
 
         {/* btn container */}
             <div className="btnCont">
-                <div className="btnBox">
+                <div className="btnBox d-flex flex-wrap">
                     <button className=' mybtn m-2' onClick={uppercasefunc}>Change Uppercase</button>
                     <button className=' mybtn m-2' onClick={lowecasecasefunc}>Change lowercase</button>
                     <button className=' mybtn m-2' onClick={removeExtraSpace}>Remove Extra Space</button>
