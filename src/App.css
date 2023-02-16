@@ -1,38 +1,157 @@
-.App {
+.homeCont{
+  border: 2px solid white;
+  background-image: url('../public/images/back3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 100px;
+  
+}
+
+@media only screen and (max-width: 600px) and (min-width: 330px)  {
+  .homeCont{
+    /* border: 2px solid green; */
+    background-image: url('../public/images/back3phone.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.heading{
+  margin-top: 100px;
   text-align: center;
+  font-size: 55px;
+  letter-spacing: 3px;
+  font-weight:700 ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.formbox{
+  padding: 50px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+#floatingTextarea{
+  min-height: 200px;
+  max-height: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#outputcard{
+  min-height: 200px;
+  max-height: 200px;
+  width: 100%;
+  float:left;
+overflow-y: auto;
+height: 100px;
+  
+}
+.btnCont{
+  margin: 10px;
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+}
+.btnBox{
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+
+/* button css */
+.mybtn{
+  border: 1px solid gray;
+  background-color: rgb(203, 196, 196);
+  padding: 4px 10px 4px 10px;
+  border-radius: 50px;
+}
+
+.input{
+  display: flex;
+  justify-content: space-between;
+}
+.input button{
+  all: unset;
+  cursor: pointer;
+}
+
+  .dark{
+    background-color: black;
+    color: white;
   }
-  to {
-    transform: rotate(360deg);
+  .light{
+    background-color: white;
+    color: black;
   }
+
+  /* .card{
+    border: 2px solid red;
+  } */
+
+
+  /* heading animation */
+ 
+.title {
+  text-transform: uppercase;
+  background: linear-gradient(to right, #ff8a00 0%, #da1b60 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+  font-size: 14px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 26px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  --background: #29282b;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background);
+  transition: .5s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 50%;
+  left: 10%;
+  bottom: 15%;
+  box-shadow: inset 8px -4px 0px 0px #f4f4ef;
+  background: var(--background);
+  transition: .5s;
+}
+
+input:checked + .slider {
+  background-color: #e3e0ec;
+}
+
+input:checked + .slider:before {
+  transform: translateX(100%);
+  box-shadow: inset 15px -4px 0px 15px #282727;
+}
+
+.modeCont{
+margin: 10px;
+ float: right;
 }
